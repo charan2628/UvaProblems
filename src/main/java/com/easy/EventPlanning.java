@@ -42,6 +42,8 @@ public class EventPlanning {
 				cost = hCost*p;
 				if(cost <= budg) {
 					return cost;
+				} else {
+					return Integer.MAX_VALUE;					
 				}
 			}
 		}
