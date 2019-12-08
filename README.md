@@ -3,8 +3,8 @@
 ## Introduction
 
 ### Super Easy
-[11498 - Division of Nlogonia](./src/main/java/com/supereasy/DivisionOfNlogonia.java)
-[11727 - Cost Cutting](./src/main/java/com/supereasy/CostCutting.java)
+..* [11498 - Division of Nlogonia](./src/main/java/com/supereasy/DivisionOfNlogonia.java)
+..* [11727 - Cost Cutting](./src/main/java/com/supereasy/CostCutting.java)
 
 ### Easy
 [10114 - Loansome Car Buyer](./src/main/java/com/easy/LoansomeCarBuyer.java)
