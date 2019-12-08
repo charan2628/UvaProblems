@@ -46,7 +46,7 @@ public class MultiTasking {
 	}
 	
 	static boolean oneTimeTask(int start, int end) {
-		BitSet taskTime = tasks.get(start, end);
+		BitSet taskTime = tasks.get(start, end); //start inclusive and end exclusive
 		
 		if(taskTime.cardinality() != 0) return true;
 		tasks.set(start, end);
