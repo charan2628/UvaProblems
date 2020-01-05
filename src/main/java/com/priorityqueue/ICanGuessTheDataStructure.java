@@ -1,4 +1,4 @@
-package priorityqueue;
+package com.priorityqueue;
 
 import java.io.*;
 import java.util.*;

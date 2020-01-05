@@ -78,3 +78,27 @@
 
 ### Iterative (Three or More Nested Loops, Harder)
 * [10660 - Citizen attention offices](./src/main/java/com/iterative/CitizenAttentionOffices.java)
+* [11236 - Grocery store](./src/main/java/com/iterative/GroceryStore.java)
+
+### Recursive Backtracking (Easy)
+* [624 - CD](./src/main/java/com/backtracking/CD.java)
+* [10576 - Y2K Accounting Bug](./src/main/java/com/backtracking/Y2KAccountingBug.java)
+
+### Recursive Backtracking (Medium)
+* [524 - Prime Ring Problem](./src/main/java/com/backtracking/PrimeRingProblem.java)
+* [574 - Sum It Up](./src/main/java/com/backtracking/SumItUp.java)
+
+### Binary Search
+* [10567 - Helping Fill Bates](./src/main/java/com/divideangconquer/HelpingFillBates.java)
+* [11057 - Exact Sum](./src/main/java/com/divideangconquer/ExactSum.java)
+* [12192 - Grapevine](./src/main/java/com/divideangconquer/Grapevine.java)
+
+### Binary Search the Answer
+* [10341 - Solve It](./src/main/java/com/divideangconquer/SolveIt.java)
+* [11413 - Fill the Containers](./src/main/java/com/divideangconquer/FillTheContainers.java)
+* [12032 - The Monkey and the Oiled Bamboo](./src/main/java/com/divideangconquer/TheMonkeyandtheOiledBamboo.java)
+
+### Greedy Classical, Usually Easier
+* [11264 - Coin Collector](./src/main/java/com/greedy/CoinCollector.java)
+* [11389 - The Bus Driver Problem](./src/main/java/com/greedy/TheBusDriverProblem.java)
+* [12405 - Scarecrow](./src/main/java/com/greedy/Scarecrow.java)

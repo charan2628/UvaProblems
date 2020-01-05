@@ -41,24 +41,24 @@ public class FerryLoadingIII {
 	}
 	
 	public static void process() throws Exception {
-		pos = 0; currTime = 0;
+		pos = 0; currTime = 0; //pos = 0(left) || 1(right)
 		while(!left.isEmpty() || !right.isEmpty() || !ferry.isEmpty()) {
 			
 			while(!ferry.isEmpty()) {
-				result[ferry.pop().index] = currTime;
+				result[ferry.pop().index] = currTime; //empty the ferry
 			}
 			
-			if(pos == 0) {
+			if(pos == 0) { //left side
 				if(right.peek() != null && left.peek() != null) {
 					if(left.peek().arvTime <= currTime) {
 						loadFerry(left, ferry);
 					} else {
 						if(left.peek().arvTime <= right.peek().arvTime) {
-							currTime = left.peek().arvTime;
+							currTime = left.peek().arvTime; //wait for cars to arrive
 							loadFerry(left, ferry);
 						} else {
 							if(right.peek().arvTime > currTime) {
-								currTime = right.peek().arvTime;
+								currTime = right.peek().arvTime; //wait for cars to arrive
 							}
 						}
 					}
@@ -67,14 +67,14 @@ public class FerryLoadingIII {
 						if(left.peek().arvTime <= currTime) {
 							loadFerry(left, ferry);
 						} else {
-							currTime = left.peek().arvTime;
+							currTime = left.peek().arvTime; //wait for cars to arrive
 							loadFerry(left, ferry);
 						}
 					}
 				} else {
 					if(right.peek().arvTime > currTime) {
-						currTime = right.peek().arvTime;
-					}
+						currTime = right.peek().arvTime; //wait for cars to arrive
+					} //else don't wait move to other side
 				}
 				pos = 1;
 				currTime += t;
@@ -85,11 +85,11 @@ public class FerryLoadingIII {
 						loadFerry(right, ferry);
 					} else {
 						if(right.peek().arvTime <= left.peek().arvTime) {
-							currTime = right.peek().arvTime;
+							currTime = right.peek().arvTime; //wait for cars to arrive
 							loadFerry(right, ferry);
 						} else {
 							if(left.peek().arvTime > currTime) {
-								currTime = left.peek().arvTime;
+								currTime = left.peek().arvTime; //wait for cars to arrive
 							}
 						}
 					}
@@ -98,13 +98,13 @@ public class FerryLoadingIII {
 						if(right.peek().arvTime <= currTime) {
 							loadFerry(right, ferry);
 						} else {
-							currTime = right.peek().arvTime;
+							currTime = right.peek().arvTime; //wait for cars to arrive
 							loadFerry(right, ferry);
 						}
 					}
 				} else {
 					if(left.peek().arvTime > currTime) {
-						currTime = left.peek().arvTime;
+						currTime = left.peek().arvTime; //wait for cars to arrive
 					}
 				}
 				pos = 0;
